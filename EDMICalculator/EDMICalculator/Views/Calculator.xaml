@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EDMICalculator.Views.Calculator"
+             Title="EDMI Wesly A Simanjuntak">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="30">
+                <Label x:Name="Entry" HorizontalTextAlignment="End" Text="0" HorizontalOptions="EndAndExpand"  FontSize="30"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button FontSize="50" Clicked="Button_Clicked" Padding="40" Text="7"  BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="8" Grid.Column="1" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="9" Grid.Column="2" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="+" Grid.Column="3" BackgroundColor="Green" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="4" Grid.Row="1" Grid.Column="0" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="5" Grid.Row="1" Grid.Column="1" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="6"  Grid.Row="1" Grid.Column="2" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="-"  Grid.Row="1" Grid.Column="3" BackgroundColor="Green" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="1" Grid.Row="2" Grid.Column="0" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="2" Grid.Row="2" Grid.Column="1" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="3"  Grid.Row="2" Grid.Column="2" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="x"  Grid.Row="2" Grid.Column="3" BackgroundColor="Green" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="0" Grid.Row="3" Grid.Column="0" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="." Grid.Row="3" Grid.Column="1" BackgroundColor="Orange" ></Button>
+                    <Button FontSize="50" Text="="  Grid.Row="3" Grid.Column="2" Clicked="Result_Clicked"  x:Name="Result" BackgroundColor="Blue" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text=":"  Grid.Row="4" Grid.Column="3" BackgroundColor="Green" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="(" Grid.Row="4" Grid.Column="0" BackgroundColor="Crimson" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text=")" Grid.Row="4" Grid.Column="1" BackgroundColor="Crimson" ></Button>
+                    <Button FontSize="50" Clicked="Button_Clicked" Text="%"  Grid.Row="4" Grid.Column="2" BackgroundColor="Crimson" ></Button>
+                    <Button FontSize="50" Text="CE" x:Name="Clear" Clicked="Clear_Clicked"  Grid.Row="3" Grid.Column="3" BackgroundColor="Thistle" ></Button>
+                </Grid>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
